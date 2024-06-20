@@ -10,17 +10,14 @@ func main() {
 
 	//Create secret number
 	secret := getRandomNumber()
-	//fmt.Println(secret)
 
 	for matching := false; !matching; {
 
 		//Get user input
 		guess := getUserInput()
-		//fmt.Println(secret, guess)
 
 		//Make comparison (secret vs guess)
 		matching = isMatching(secret, guess)
-		//fmt.Println(matching)
 	}
 }
 
